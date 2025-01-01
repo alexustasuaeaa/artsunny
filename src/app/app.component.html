@@ -1,3 +1,74 @@
-<div>
-  <h2>Art Sunny</h2>
+<body class="main-page">
+<div class="container-fluid p-0 navbar-info position-fixed">
+  <nav class="navbar d-flex navbar-expand-lg bg-light bg-opacity-90">
+    <a class="navbar-brand mx-3 p-0" type="button">
+      <img class="img-logo mr-auto" src="/" alt="Logo">
+    </a>
+    <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-5">
+        <li class="nav-item mx-2">
+          <a class="nav-link" type="button" (click)="navigateToGallery()">
+            <h4>{{ 'app_nav_gallery' | translate }}</h4>
+          </a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" type="button" (click)="navigateToContacts()"><h4>{{ 'app_nav_contacts' | translate }}</h4></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </div>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer container-fluid text-center fixed-bottom">
+  <div class="position-fixed">
+    <button type="button" class="btn bg-light rounded-circle bg-opacity-75 mx-1" (click)="changeLang()">
+      <h6 class="my-1 fw-bold">{{ 'app_nav_lang' | translate }}</h6>
+    </button>
+  </div>
+  <!-- Section: Social media -->
+  <section class="mb-2">
+    <!-- Whatsapp -->
+    <a class="btn bg-light rounded-circle mx-1 bg-opacity-75"
+       href="https://wa.me/79875413724" target="_blank" role="button">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Telegram -->
+    <a class="btn bg-light rounded-circle mx-1 bg-opacity-75"
+       href="https://t.me/VoicesOfTheFire" target="_blank" role="button">
+      <i class="fab fa-telegram"></i>
+    </a>
+
+    <!-- VK -->
+    <a class="btn bg-light rounded-circle mx-1 bg-opacity-75"
+       href="https://vk.com/aeaaoioalksndrnvkv?from=search" target="_blank" role="button">
+      <i class="fab fa-vk"></i>
+    </a>
+
+    <!-- Google -->
+    <a class="btn bg-light rounded-circle mx-1 bg-opacity-75"
+       href="mailto:mifag082@gmail.com" target="_blank" role="button">
+      <i class="fab fa-google"></i>
+    </a>
+
+    <!-- FB -->
+    <a class="btn bg-light rounded-circle mx-1 bg-opacity-75"
+       href="https://www.facebook.com/alexandra.novikova.9047" target="_blank" role="button">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </section>
+  <div class="row text-center bg-light bg-opacity-50">
+    <h6 class="text-dark">© 2024 Copyright:
+      <a class="text-dark" href="https://mifag.github.io/business-card/" target="_blank" >Mifag</a>
+    </h6>
+  </div>
+</footer>
+</body>
