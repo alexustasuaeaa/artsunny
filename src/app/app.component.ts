@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 import { TranslateService } from "@ngx-translate/core";
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -9,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [RouterOutlet, TranslateModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  providers: [Router, TranslateService]
+  providers: [Router, HttpClient, TranslateService]
 })
 export class AppComponent {
   title = 'artsunny';
