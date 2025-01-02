@@ -1,8 +1,8 @@
 <body class="main-page">
 <div class="container-fluid p-0 navbar-info position-fixed-top">
   <nav class="navbar d-flex navbar-expand-lg bg-light bg-opacity-90">
-    <a class="navbar-brand mx-3 p-0" type="button" (click)="navigateToGallery()">
-      <img class="img-logo mr-auto" src="../assets/img/logo.png" alt="Logo">
+    <a class="navbar-brand mx-3" type="button" (click)="navigateToGallery()">
+      <img class="img-logo" src="../assets/img/logo.png" alt="Logo">
     </a>
     <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,11 +12,13 @@
       <ul class="navbar-nav mx-5">
         <li class="nav-item mx-3">
           <a class="nav-link" type="button" (click)="navigateToGallery()">
-            <h2>Gallery</h2>
+            <h2 class="mb-0">Gallery</h2>
           </a>
         </li>
         <li class="nav-item mx-3">
-          <a class="nav-link" type="button" (click)="navigateToContacts()"><h2>Contacts</h2></a>
+          <a class="nav-link" type="button" (click)="navigateToContacts()">
+            <h2 class="mb-0">Contacts</h2>
+          </a>
         </li>
       </ul>
     </div>
