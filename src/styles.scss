@@ -5,3 +5,15 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/fonts/LoveLight-Regular.ttf');
+}
+
+body {
+  h2 {
+    font-family: 'MyFont';
+    font-size: 3.2em;
+  }
+}
