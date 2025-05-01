@@ -46,4 +46,9 @@ export class AppComponent {
     this.router.navigate(['/contacts']);
     this.toggleNavbar();
   }
+
+  navigateToAbout(): void {
+    this.router.navigate(['/about']);
+    this.toggleNavbar();
+  }
 }
