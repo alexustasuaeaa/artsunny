@@ -37,8 +37,13 @@ export class AppComponent {
     }
   }
 
-  navigateToGallery(): void {
+  navigateToHome(): void {
     this.router.navigate(['/']);
+    this.toggleNavbar();
+  }
+
+  navigateToGallery(): void {
+    this.router.navigate(['/gallery']);
     this.toggleNavbar();
   }
 
@@ -49,6 +54,26 @@ export class AppComponent {
 
   navigateToAbout(): void {
     this.router.navigate(['/about']);
+    this.toggleNavbar();
+  }
+
+  navigateToEvents(): void {
+    this.router.navigate(['/events']);
+    this.toggleNavbar();
+  }
+
+  navigateToOil(): void {
+    this.router.navigate(['/gallery/oil']);
+    this.toggleNavbar();
+  }
+
+  navigateToPastel(): void {
+    this.router.navigate(['/gallery/pastel']);
+    this.toggleNavbar();
+  }
+
+  navigateToSketches(): void {
+    this.router.navigate(['/gallery/sketches']);
     this.toggleNavbar();
   }
 }

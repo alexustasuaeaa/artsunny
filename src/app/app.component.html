@@ -11,23 +11,41 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-5">
         <li class="nav-item mx-4 ">
-          <a class="nav-link" type="button" (click)="navigateToGallery()">
+          <a class="nav-link" type="button" (click)="navigateToHome()">
             <img class="img-nav" src="../assets/img/artsunny/home.png" alt="Home">
           </a>
         </li>
         <li class="nav-item mx-4">
           <a class="nav-link" type="button" (click)="navigateToAbout()">
-            <img class="img-nav pt-1" src="../assets/img/artsunny/about.png" alt="About">
+            <img class="img-nav1 pt-1" src="../assets/img/artsunny/about.png" alt="About">
           </a>
         </li>
-        <li class="nav-item mx-4">
-          <a class="nav-link" type="button" (click)="navigateToGallery()">
-            <img class="img-nav pt-1" src="../assets/img/artsunny/gallery.png" alt="Gallery">
-          </a>
+        <li class="nav-item dropdown mx-4">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            <img class="img-nav pt-1" src="../assets/img/artsunny/gallery.png" alt="Gallery"></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" (click)="navigateToOil()">
+                <img class="img-nav3 pt-1" src="../assets/img/artsunny/oil.png" alt="Oil">
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" (click)="navigateToPastel()">
+                <img class="img-nav4 pt-1" src="../assets/img/artsunny/pastel.png" alt="Pastel">
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" (click)="navigateToSketches()">
+                <img class="img-nav5 pt-1" src="../assets/img/artsunny/sketches.png" alt="Sketches">
+              </a>
+            </li>
+<!--            <li><hr class="dropdown-divider"></li>-->
+<!--            <li><a class="dropdown-item" href="#">Separated link</a></li>-->
+          </ul>
         </li>
         <li class="nav-item mx-4">
-          <a class="nav-link" type="button" (click)="navigateToContacts()">
-            <img class="img-nav2 pt-2" src="../assets/img/artsunny/events.png" alt="Events">
+          <a class="nav-link" type="button" (click)="navigateToEvents()">
+            <img class="img-nav6 pt-2" src="../assets/img/artsunny/events.png" alt="Events">
           </a>
         </li>
         <li class="nav-item mx-4">
