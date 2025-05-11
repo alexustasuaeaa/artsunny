@@ -1,11 +1,33 @@
 .home {
   margin-top: 5vh;
   margin-bottom: 100px;
+  min-height: 50vh;
+  width: 100%;
+  background-position: right;
+  background-image: url('./../../assets/img/artsunny/bg-artsunny.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
 
-  h4 {
+  h3 {
     font-family: 'MyFontTwo';
-    font-size: 2em;
-    color: black;
+    font-size: 3em;
+    color: white;
     opacity: 1;
   }
 }
+//
+//   /* next size - tablet */
+//   @media (min-width: 768px) {
+//     .home {
+//       min-height: 50vh;
+//       width: 100%;
+//     }
+//   }
+
+  /* next size - tablet landscape and it covers desktop */
+  @media (min-width: 1366px) {
+    .home {
+      min-height: 100vh;
+      width: 100%;
+    }
+  }
