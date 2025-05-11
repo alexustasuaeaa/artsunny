@@ -7,6 +7,7 @@ import { EventsComponent } from './events/events.component';
 import { OilComponent } from './gallery/oil/oil.component';
 import { PastelComponent } from './gallery/pastel/pastel.component';
 import { SketchesComponent } from './gallery/sketches/sketches.component';
+import { CharcoalComponent } from './gallery/charcoal/charcoal.component';
 
 export const routes: Routes = [
     { path: 'gallery', component: GalleryComponent },
@@ -17,5 +18,6 @@ export const routes: Routes = [
     { path: 'gallery/oil', component: OilComponent },
     { path: 'gallery/pastel', component: PastelComponent },
     { path: 'gallery/sketches', component: SketchesComponent },
+    { path: 'gallery/charcoal', component: CharcoalComponent },
     { path: '**', redirectTo: 'home' },
   ];

@@ -76,4 +76,9 @@ export class AppComponent {
     this.router.navigate(['/gallery/sketches']);
     this.toggleNavbar();
   }
+
+  navigateToCharcoal(): void {
+    this.router.navigate(['/gallery/charcoal']);
+    this.toggleNavbar();
+  }
 }
